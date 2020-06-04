@@ -1259,6 +1259,27 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
+<package name="E2,5-6">
+<description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 2.54 mm, diameter 6 mm</description>
+<wire x1="-2.032" y1="1.27" x2="-1.651" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="0.889" x2="-1.651" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="1.27" x2="-1.27" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="1.27" x2="-1.651" y2="1.651" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="0" x2="-0.762" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="-1.27" x2="-0.254" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-1.27" x2="-0.254" y2="1.27" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="1.27" x2="-0.762" y2="1.27" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="1.27" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0" x2="1.651" y2="0" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="2.794" width="0.1524" layer="21"/>
+<pad name="-" x="1.27" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="+" x="-1.27" y="0" drill="0.8128" diameter="1.6002"/>
+<text x="2.667" y="1.524" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="2.667" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
+</package>
 </packages>
 </library>
 <library name="led">
@@ -1551,23 +1572,12 @@ design rules under a new name.</description>
 <element name="C4" library="rcl" package="C0805" value="220n" x="64.77" y="54.61"/>
 <element name="VT1" library="m_transistor" package="TO220FV" value="" x="77.47" y="57.15" rot="R270"/>
 <element name="JP1" library="Разъёмы штырьковые 2.54мм" package="1X02" value="" x="57.15" y="61.595" rot="R270"/>
+<element name="C1B" library="rcl" package="C0805" value="1mf cer" x="45.085" y="38.1"/>
+<element name="C1C" library="rcl" package="E2,5-6" value="47m" x="45.72" y="31.75"/>
+<element name="C3" library="rcl" package="E2,5-6" value="10m louesr" x="45.72" y="24.765"/>
+<element name="C3B" library="rcl" package="C0805" value="1mf cer" x="45.085" y="18.415"/>
 </elements>
 <signals>
-<signal name="N$1">
-<contactref element="DA1" pad="9"/>
-<contactref element="C2" pad="1"/>
-<contactref element="C1" pad="1"/>
-<contactref element="R1" pad="2"/>
-<contactref element="R3" pad="2"/>
-<contactref element="VT1" pad="3"/>
-<contactref element="JP1" pad="1"/>
-<wire x1="67.31" y1="58.735" x2="67.63" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="64.73" y1="59.42" x2="67.31" y2="58.735" width="0" layer="19" extent="1-1"/>
-<wire x1="59.69" y1="63.815" x2="64.73" y2="59.42" width="0" layer="19" extent="1-1"/>
-<wire x1="57.15" y1="62.865" x2="59.69" y2="63.815" width="0" layer="19" extent="1-1"/>
-<wire x1="54.61" y1="61.275" x2="57.15" y2="62.865" width="0" layer="19" extent="1-1"/>
-<wire x1="74.93" y1="54.61" x2="67.31" y2="58.735" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$2">
 <contactref element="DA1" pad="1"/>
 <contactref element="C2" pad="2"/>
@@ -1579,10 +1589,14 @@ design rules under a new name.</description>
 <contactref element="R4" pad="1"/>
 <contactref element="C4" pad="2"/>
 <contactref element="JP1" pad="2"/>
+<contactref element="C3B" pad="2"/>
+<contactref element="C3" pad="-"/>
 <wire x1="69.85" y1="60.005" x2="69.53" y2="62.23" width="0" layer="19" extent="1-1"/>
 <wire x1="65.72" y1="54.61" x2="69.85" y2="60.005" width="0" layer="19" extent="1-1"/>
 <wire x1="59.73" y1="59.42" x2="65.72" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="57.15" y1="60.325" x2="59.73" y2="59.42" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="24.765" x2="65.72" y2="54.61" width="0" layer="19" extent="1-1"/>
+<wire x1="46.035" y1="18.415" x2="46.99" y2="24.765" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R1" pad="1"/>
@@ -1622,6 +1636,26 @@ design rules under a new name.</description>
 <contactref element="DA1" pad="10"/>
 <contactref element="VT1" pad="1"/>
 <wire x1="64.73" y1="60.42" x2="74.93" y2="59.69" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1">
+<contactref element="JP1" pad="1"/>
+<contactref element="DA1" pad="9"/>
+<contactref element="C2" pad="1"/>
+<contactref element="C1" pad="1"/>
+<contactref element="R1" pad="2"/>
+<contactref element="VT1" pad="3"/>
+<contactref element="R3" pad="2"/>
+<wire x1="67.31" y1="58.735" x2="67.63" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="64.73" y1="59.42" x2="67.31" y2="58.735" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="63.815" x2="64.73" y2="59.42" width="0" layer="19" extent="1-1"/>
+<wire x1="57.15" y1="62.865" x2="59.69" y2="63.815" width="0" layer="19" extent="1-1"/>
+<wire x1="54.61" y1="61.275" x2="57.15" y2="62.865" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="54.61" x2="67.31" y2="58.735" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$10">
+<contactref element="C3" pad="+"/>
+<contactref element="C3B" pad="1"/>
+<wire x1="44.135" y1="18.415" x2="44.45" y2="24.765" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
