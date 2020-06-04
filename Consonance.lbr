@@ -73,6 +73,8 @@
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
 <library>
+<description>&lt;b&gt;LiFePO4 Battery Charger IC&lt;/b&gt;&lt;br&gt;
+http://www.consonance-elec.com/Phosphate%20iron%20lithium%20battery%20charge%20IC.html</description>
 <packages>
 <package name="SSOP10">
 <wire x1="2" y1="2.5" x2="2" y2="-2.5" width="0.127" layer="21"/>
