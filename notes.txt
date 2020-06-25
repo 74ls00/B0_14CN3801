@@ -73,6 +73,34 @@ L> 5*(Vcc-Vbat) (uH) = 5*(4.5-3.65)=5*0.85=4.25uH
 
 ?
 ---------------------------------------
+MOSFET Selection
+
+Pd=(Vbat/Vcc)*Rdson*(Ich^2)*(1+0.005dT)
+P=(3.65/4.5)*Rdson*(Ich^2)*(1+0.005dT)
+
+          Rdson/V    I a
+CN2305    75mo/-2.5
+AO4459    46mo/-2.4
+AO4435    36m/5      10
+FDS4435BZ  
+FDS9435A  80m/4.5    5.3
+AO3407A              4.3
+
+?
+---------------------------------------
+Battery Current In Sleep Mode
+
+bat csp 8mka 3v6
+fet 18 ua
+d2
+~30ua 3.6v
+
+0,000108w 
+0,002592 d 
+---------------------------------------
+PCB Layout Considerations
+(3) Output capacitor ground and catch diode (D2 in Figure 1) ground connections need to feed into same copper that connects to the input capacitor ground before tying back into system ground.
+(6) Place the charge current sense resistor RCS right next to the inductor output but oriented such that the IC’s CSP and BAT traces going to RCS are not long. The 2 traces need to be routed together as a single pair on the same layer at any given time with smallest trace spacing possible.
 
 
 
