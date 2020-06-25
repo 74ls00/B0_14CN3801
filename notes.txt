@@ -14,7 +14,23 @@ https://www.crowdsupply.com/silicognition/lifepo4wered-pi-plus/updates/scaling-u
 https://cdn.hackaday.io/files/20909894570656/LiFePO4wered-PiPlus-CC-BY-SA.pdf
 
 
+---------------------------------------
+ток заряда
+Ich=120mv/Rcs
+6=0.12/r r=0.02 ohm
 
+6a 6=120/x x=20 mohm
+5a 24 mohm
+4a 30 mohm
+3a x=40 mohm
 
+---------------------------------------
+mppt to 1.205v
+Vmppt=1.205*(1+R3/R4)
+v=1.205*(1+a/b)
+r1 43k 1% r2 15k 1% 5v =out=1.293v
+
+?
+---------------------------------------
 
 
