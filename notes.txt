@@ -102,7 +102,7 @@ PCB Layout Considerations
 (3) Output capacitor ground and catch diode (D2 in Figure 1) ground connections need to feed into same copper that connects to the input capacitor ground before tying back into system ground.
 (6) Place the charge current sense resistor RCS right next to the inductor output but oriented such that the IC’s CSP and BAT traces going to RCS are not long. The 2 traces need to be routed together as a single pair on the same layer at any given time with smallest trace spacing possible.
 
-
+---------------------------------------
 
 
 

@@ -8,6 +8,8 @@ Desktop="Desktop"
 [Globals]
 AutoSaveProject=1
 UsedLibrary="Consonance.lbr"
+UsedLibrary="G:/Programs/EAGLE-6.4.0/lbr/eagle6_lbr_sort/RCL/rcl.lbr"
+UsedLibrary="G:/Programs/EAGLE-6.4.0/lbr/eagle6_lbr_sort/RCL/inductors.lbr"
 
 [Win_1]
 Type="Board Editor"
@@ -15,7 +17,7 @@ Loc="332 293 931 692"
 State=1
 Number=2
 File="B0_14CN3801.brd"
-View="48.2863 51.271 73.6859 65.2681"
+View="-15.2766 9.2944 173.445 113.294"
 WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -53,7 +55,7 @@ SwapLevel=0
 ArcDirection=0
 AddLevel=2
 PadsSameType=0
-Layer=16
+Layer=1
 
 [Win_2]
 Type="Schematic Editor"
@@ -61,7 +63,7 @@ Loc="387 274 986 673"
 State=1
 Number=1
 File="B0_14CN3801.sch"
-View="-40.6238 -13.0564 144.289 105.816"
+View="-69.0744 -21.6575 152.821 120.989"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -100,12 +102,12 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: -40.6238 -13.0564 144.289 105.816"
+Views=" 1: -69.0744 -21.6575 152.821 120.989"
 Sheet=1
 
 [Win_3]
 Type="Control Panel"
-Loc="332 293 931 692"
+Loc="192 180 1099 667"
 State=2
 Number=0
 

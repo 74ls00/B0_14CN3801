@@ -150,6 +150,8 @@
 <plain>
 <dimension x1="53.34" y1="44.45" x2="77.47" y2="41.275" x3="65.405" y3="76.835" textsize="1.778" layer="47" dtype="horizontal"/>
 <dimension x1="42.545" y1="65.405" x2="45.72" y2="51.435" x3="90.805" y3="58.42" textsize="1.778" layer="47" dtype="vertical"/>
+<dimension x1="43.18" y1="94.615" x2="55.88" y2="94.615" x3="49.53" y3="101.6" textsize="1.778" layer="1" dtype="horizontal"/>
+<dimension x1="76.2" y1="81.915" x2="83.82" y2="81.915" x3="80.01" y3="87.63" textsize="1.778" layer="1" dtype="horizontal"/>
 </plain>
 <libraries>
 <library name="Consonance">
@@ -1280,6 +1282,53 @@ grid 2.54 mm, diameter 6 mm</description>
 <text x="2.667" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
 </package>
+<package name="PIS2816">
+<description>&lt;b&gt;PIS 2826&lt;/b&gt; Inductor&lt;p&gt;
+Source: http://www.stetco.com/products/inductors/pdf/PIS2816.pdf</description>
+<wire x1="-3.65" y1="-3.65" x2="3.65" y2="-3.65" width="0.2032" layer="51"/>
+<wire x1="3.65" y1="-3.65" x2="3.65" y2="3.65" width="0.2032" layer="21"/>
+<wire x1="3.65" y1="3.65" x2="-3.65" y2="3.65" width="0.2032" layer="51"/>
+<wire x1="-3.65" y1="3.65" x2="-3.65" y2="-3.65" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="1.125" x2="-2.875" y2="-0.625" width="0.1016" layer="21"/>
+<wire x1="-2.75" y1="-1.125" x2="2.875" y2="0.625" width="0.1016" layer="21"/>
+<wire x1="-2.875" y1="-0.625" x2="2.75" y2="1.125" width="0.1016" layer="51" curve="-169.840784"/>
+<wire x1="2.875" y1="0.625" x2="-2.75" y2="-1.125" width="0.1016" layer="51" curve="-169.840784"/>
+<wire x1="-2.875" y1="-0.625" x2="-1.375" y2="2.6" width="0.1016" layer="21" curve="-74.384165"/>
+<wire x1="2.75" y1="1.125" x2="1.275" y2="2.675" width="0.1016" layer="21" curve="42.122709"/>
+<wire x1="2.875" y1="0.625" x2="1.375" y2="-2.6" width="0.1016" layer="21" curve="-74.384165"/>
+<wire x1="-2.75" y1="-1.125" x2="-1.275" y2="-2.675" width="0.1016" layer="21" curve="42.122709"/>
+<wire x1="-1.35" y1="3.65" x2="-3.65" y2="3.65" width="0.2032" layer="21"/>
+<wire x1="-3.65" y1="-3.65" x2="-1.35" y2="-3.65" width="0.2032" layer="21"/>
+<wire x1="1.35" y1="-3.65" x2="3.65" y2="-3.65" width="0.2032" layer="21"/>
+<wire x1="3.65" y1="3.65" x2="1.35" y2="3.65" width="0.2032" layer="21"/>
+<circle x="1.5" y="1.375" radius="0.25" width="0" layer="21"/>
+<smd name="1" x="0" y="3.2" dx="2.2" dy="1.6" layer="1"/>
+<smd name="2" x="0" y="-3.2" dx="2.2" dy="1.6" layer="1"/>
+<text x="-3.625" y="4.5" size="1.778" layer="25">&gt;NAME</text>
+<text x="-3.625" y="-6.25" size="1.778" layer="27">&gt;VALUE</text>
+</package>
+<package name="POWER-CHOKE_WE-TPC">
+<description>&lt;b&gt;POWER-CHOKE WE-TPC&lt;/b&gt;&lt;p&gt;
+Würth Elektronik, Partnumber: 744053220&lt;br&gt;
+Source: WE-TPC 744053220.pdf</description>
+<wire x1="-2.8" y1="2.3" x2="-2.3" y2="2.8" width="0.2" layer="51" curve="-90"/>
+<wire x1="-2.3" y1="2.8" x2="2.3" y2="2.8" width="0.2" layer="51"/>
+<wire x1="2.3" y1="2.8" x2="2.8" y2="2.3" width="0.2" layer="51" curve="-90"/>
+<wire x1="2.8" y1="2.3" x2="2.8" y2="-2.3" width="0.2" layer="51"/>
+<wire x1="2.8" y1="-2.3" x2="2.3" y2="-2.8" width="0.2" layer="51" curve="-90"/>
+<wire x1="2.3" y1="-2.8" x2="-2.3" y2="-2.8" width="0.2" layer="51"/>
+<wire x1="-2.3" y1="-2.8" x2="-2.8" y2="-2.3" width="0.2" layer="51" curve="-90"/>
+<wire x1="-2.8" y1="-2.3" x2="-2.8" y2="2.3" width="0.2" layer="51"/>
+<wire x1="-2.8" y1="0.65" x2="-2.8" y2="-0.65" width="0.2" layer="21"/>
+<wire x1="-2" y1="0.65" x2="-2" y2="-0.65" width="0.2" layer="21" curve="36.008323"/>
+<wire x1="2.8" y1="-0.65" x2="2.8" y2="0.65" width="0.2" layer="21"/>
+<wire x1="2" y1="-0.65" x2="2" y2="0.65" width="0.2" layer="21" curve="36.008323"/>
+<circle x="0" y="0" radius="2.1" width="0.2" layer="51"/>
+<smd name="1" x="0" y="2.05" dx="6.3" dy="2.2" layer="1" roundness="25"/>
+<smd name="2" x="0" y="-2.05" dx="6.3" dy="2.2" layer="1" roundness="25" rot="R180"/>
+<text x="-3.5" y="3.5" size="1.778" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-5.3" size="1.778" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="led">
@@ -1408,6 +1457,55 @@ Based on the following sources:
 <packages>
 <package name="PCB1">
 <circle x="0" y="0" radius="60" width="0.127" layer="20"/>
+</package>
+</packages>
+</library>
+<library name="inductors">
+<description>&lt;b&gt;Inductors and Filters&lt;/b&gt;&lt;p&gt;
+Based on the previous library ind-a.lbr&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DR125">
+<description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
+Source: coiltronics_dr_series.pdf</description>
+<wire x1="-6.5" y1="6.5" x2="6.525" y2="6.5" width="0.2032" layer="21"/>
+<wire x1="6.525" y1="6.5" x2="6.525" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="6.525" y1="-6.5" x2="-6.5" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="-6.5" y1="-6.5" x2="-6.5" y2="6.5" width="0.2032" layer="21"/>
+<wire x1="-4.5254" y1="3.783" x2="-3.8006" y2="4.5431" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="-3.783" y1="-4.5254" x2="-4.5431" y2="-3.8006" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="4.5254" y1="-3.783" x2="3.8006" y2="-4.5431" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="3.783" y1="4.5254" x2="4.5431" y2="3.8006" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="0" y1="5.9" x2="4.9" y2="3.275" width="0.2032" layer="21" curve="-56.209779"/>
+<wire x1="0" y1="5.9" x2="-4.95" y2="3.225" width="0.2032" layer="21" curve="56.95663"/>
+<wire x1="0" y1="-5.9" x2="-4.9" y2="-3.275" width="0.2032" layer="21" curve="-56.209779"/>
+<wire x1="0" y1="-5.9" x2="4.95" y2="-3.225" width="0.2032" layer="21" curve="56.95663"/>
+<circle x="0" y="0" radius="5.9" width="0.2032" layer="51"/>
+<smd name="1" x="-4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
+<smd name="2" x="4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
+<text x="-2.5" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="DR127">
+<description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
+Source: coiltronics_dr_series.pdf</description>
+<wire x1="-6.5" y1="6.5" x2="6.525" y2="6.5" width="0.2032" layer="21"/>
+<wire x1="6.525" y1="6.5" x2="6.525" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="6.525" y1="-6.5" x2="-6.5" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="-6.5" y1="-6.5" x2="-6.5" y2="6.5" width="0.2032" layer="21"/>
+<wire x1="-4.5254" y1="3.783" x2="-3.8006" y2="4.5431" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="-3.783" y1="-4.5254" x2="-4.5431" y2="-3.8006" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="4.5254" y1="-3.783" x2="3.8006" y2="-4.5431" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="3.783" y1="4.5254" x2="4.5431" y2="3.8006" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="0" y1="5.9" x2="4.9" y2="3.275" width="0.2032" layer="21" curve="-56.209779"/>
+<wire x1="0" y1="5.9" x2="-4.95" y2="3.225" width="0.2032" layer="21" curve="56.95663"/>
+<wire x1="0" y1="-5.9" x2="-4.9" y2="-3.275" width="0.2032" layer="21" curve="-56.209779"/>
+<wire x1="0" y1="-5.9" x2="4.95" y2="-3.225" width="0.2032" layer="21" curve="56.95663"/>
+<circle x="0" y="0" radius="5.9" width="0.2032" layer="51"/>
+<smd name="1" x="-4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
+<smd name="2" x="4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
+<text x="-2.5" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -1598,15 +1696,15 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="DA1" library="Consonance" package="SSOP10" value="CN3801" x="62.23" y="58.42"/>
-<element name="C2" library="rcl" package="C0805" value="100n" x="59.69" y="62.865" rot="R270"/>
+<element name="C2" library="rcl" package="C0805" value="100n" x="62.23" y="62.23" rot="R180"/>
 <element name="C1" library="rcl" package="C0805" value="100n" x="68.58" y="62.23"/>
 <element name="HL1" library="led" package="CHIPLED_0603" value="" x="57.15" y="58.42" rot="R270"/>
 <element name="HL2" library="led" package="CHIPLED_0603" value="" x="57.15" y="57.15" rot="R270"/>
 <element name="R1" library="rcl" package="R0805" value="" x="54.61" y="60.325" rot="R90"/>
-<element name="R2" library="rcl" package="R0805" value="120" x="60.325" y="54.61" rot="R180"/>
+<element name="R2" library="rcl" package="R0805" value="120" x="60.96" y="53.34" rot="R90"/>
 <element name="R3" library="rcl" package="R0805" value="" x="67.31" y="57.785" rot="R90"/>
 <element name="R4" library="rcl" package="R0805" value="" x="69.85" y="59.055" rot="R270"/>
-<element name="C4" library="rcl" package="C0805" value="220n" x="64.77" y="54.61"/>
+<element name="C4" library="rcl" package="C0805" value="220n" x="63.5" y="53.34" rot="R90"/>
 <element name="VT1" library="m_transistor" package="TO220FV" value="" x="77.47" y="57.15" rot="R270"/>
 <element name="JP1" library="Разъёмы штырьковые 2.54мм" package="1X02" value="" x="57.15" y="61.595" rot="R270"/>
 <element name="C1B" library="rcl" package="C0805" value="1mf cer" x="61.595" y="43.815"/>
@@ -1617,12 +1715,18 @@ design rules under a new name.</description>
 <element name="D2" library="diode" package="SMC" value="" x="42.545" y="60.325"/>
 <element name="D3" library="diode" package="SMC" value="" x="42.545" y="49.53"/>
 <element name="U$1" library="B0_14CN3801" package="PCB1" value="" x="51.435" y="39.37"/>
+<element name="L1" library="rcl" package="PIS2816" value="" x="80.01" y="78.74" rot="R90"/>
+<element name="L2" library="rcl" package="POWER-CHOKE_WE-TPC" value="" x="66.04" y="78.105" rot="R90"/>
+<element name="L3" library="inductors" package="DR125" value="DR125" x="49.53" y="87.63"/>
+<element name="L4" library="inductors" package="DR127" value="DR127" x="66.04" y="87.63"/>
 </elements>
 <signals>
 <signal name="N$2">
 <contactref element="DA1" pad="1"/>
 <contactref element="C2" pad="2"/>
-<wire x1="59.73" y1="60.42" x2="59.69" y2="61.915" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="60.46" x2="59.73" y2="60.42" width="0.4064" layer="1"/>
+<wire x1="59.69" y1="60.46" x2="59.69" y2="60.64" width="0.4064" layer="1"/>
+<wire x1="59.69" y1="60.64" x2="61.28" y2="62.23" width="0.4064" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="DA1" pad="2"/>
@@ -1633,28 +1737,34 @@ design rules under a new name.</description>
 <contactref element="C3B" pad="2"/>
 <contactref element="C3" pad="-"/>
 <wire x1="69.85" y1="60.005" x2="69.53" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="65.72" y1="54.61" x2="69.85" y2="60.005" width="0" layer="19" extent="1-1"/>
-<wire x1="59.73" y1="59.42" x2="65.72" y2="54.61" width="0" layer="19" extent="1-1"/>
-<wire x1="57.15" y1="60.325" x2="59.73" y2="59.42" width="0" layer="19" extent="1-1"/>
-<wire x1="72.39" y1="41.91" x2="65.72" y2="54.61" width="0" layer="19" extent="1-1"/>
+<wire x1="63.5" y1="54.29" x2="69.85" y2="60.005" width="0" layer="19" extent="1-1"/>
+<wire x1="72.39" y1="41.91" x2="63.5" y2="54.29" width="0" layer="19" extent="1-1"/>
 <wire x1="74.61" y1="36.195" x2="72.39" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="59.73" y1="59.42" x2="61.23" y2="59.42" width="0.4064" layer="1"/>
+<wire x1="61.23" y1="59.42" x2="62.865" y2="57.785" width="0.4064" layer="1"/>
+<wire x1="62.865" y1="57.785" x2="62.865" y2="54.925" width="0.4064" layer="1"/>
+<wire x1="62.865" y1="54.925" x2="63.5" y2="54.29" width="0.4064" layer="1"/>
+<wire x1="59.73" y1="59.42" x2="58.055" y2="59.42" width="0.4064" layer="1"/>
+<wire x1="58.055" y1="59.42" x2="57.15" y2="60.325" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R1" pad="1"/>
 <contactref element="HL2" pad="A"/>
 <contactref element="HL1" pad="A"/>
-<wire x1="56.4" y1="57.15" x2="56.4" y2="58.42" width="0" layer="19" extent="1-1"/>
-<wire x1="54.61" y1="59.375" x2="56.4" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="56.4" y1="57.15" x2="56.4" y2="58.42" width="0.4064" layer="1"/>
+<wire x1="56.4" y1="58.42" x2="55.565" y2="58.42" width="0.4064" layer="1"/>
+<wire x1="55.565" y1="58.42" x2="54.61" y2="59.375" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="HL1" pad="C"/>
 <contactref element="DA1" pad="3"/>
-<wire x1="57.9" y1="58.42" x2="59.73" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="57.9" y1="58.42" x2="59.73" y2="58.42" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="HL2" pad="C"/>
 <contactref element="DA1" pad="4"/>
-<wire x1="57.9" y1="57.15" x2="59.73" y2="57.42" width="0" layer="19" extent="1-1"/>
+<wire x1="59.73" y1="57.42" x2="58.17" y2="57.42" width="0.4064" layer="1"/>
+<wire x1="58.17" y1="57.42" x2="57.9" y2="57.15" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R3" pad="1"/>
@@ -1663,15 +1773,16 @@ design rules under a new name.</description>
 <wire x1="67.31" y1="56.835" x2="69.85" y2="58.105" width="0" layer="19" extent="1-1"/>
 <wire x1="64.73" y1="56.42" x2="67.31" y2="56.835" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$4">
+<signal name="COM">
 <contactref element="DA1" pad="5"/>
 <contactref element="R2" pad="2"/>
-<wire x1="59.375" y1="54.61" x2="59.73" y2="56.42" width="0" layer="19" extent="1-1"/>
+<wire x1="59.73" y1="56.42" x2="59.73" y2="55.52" width="0.4064" layer="1"/>
+<wire x1="59.73" y1="55.52" x2="60.96" y2="54.29" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="R2" pad="1"/>
 <contactref element="C4" pad="1"/>
-<wire x1="61.275" y1="54.61" x2="63.82" y2="54.61" width="0" layer="19" extent="1-1"/>
+<wire x1="60.96" y1="52.39" x2="63.5" y2="52.39" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="DA1" pad="10"/>
@@ -1688,10 +1799,17 @@ design rules under a new name.</description>
 <contactref element="R3" pad="2"/>
 <wire x1="67.31" y1="58.735" x2="67.63" y2="62.23" width="0" layer="19" extent="1-1"/>
 <wire x1="64.73" y1="59.42" x2="67.31" y2="58.735" width="0" layer="19" extent="1-1"/>
-<wire x1="59.69" y1="63.815" x2="64.73" y2="59.42" width="0" layer="19" extent="1-1"/>
-<wire x1="57.15" y1="62.865" x2="59.69" y2="63.815" width="0" layer="19" extent="1-1"/>
-<wire x1="54.61" y1="61.275" x2="57.15" y2="62.865" width="0" layer="19" extent="1-1"/>
 <wire x1="74.93" y1="54.61" x2="67.31" y2="58.735" width="0" layer="19" extent="1-1"/>
+<wire x1="58.1" y1="63.815" x2="57.15" y2="62.865" width="0.4064" layer="1"/>
+<wire x1="57.15" y1="62.865" x2="55.245" y2="62.865" width="0.4064" layer="1"/>
+<wire x1="55.245" y1="62.865" x2="54.61" y2="62.23" width="0.4064" layer="1"/>
+<wire x1="54.61" y1="62.23" x2="54.61" y2="61.275" width="0.4064" layer="1"/>
+<wire x1="64.73" y1="59.42" x2="63.77" y2="59.42" width="0.4064" layer="1"/>
+<wire x1="63.18" y1="62.23" x2="63.18" y2="60.01" width="0.4064" layer="1"/>
+<wire x1="63.18" y1="60.01" x2="63.77" y2="59.42" width="0.4064" layer="1"/>
+<wire x1="58.1" y1="63.815" x2="62.55" y2="63.815" width="0.4064" layer="1"/>
+<wire x1="63.18" y1="62.23" x2="63.18" y2="63.185" width="0.4064" layer="1"/>
+<wire x1="63.18" y1="63.185" x2="62.55" y2="63.815" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="C3" pad="+"/>
