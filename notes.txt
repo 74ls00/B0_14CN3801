@@ -54,7 +54,7 @@ Inductor Selection
 
 L> 5*(Vcc-Vbat) (uH) = 5*(4.5-3.65)=5*0.85=4.25uH
 
-?IL=0.3?ICH
+?IL=0.3*ICH
 ?IL=0.3*3 = 0.9
 ?IL=0.3*4 = 1.2
 ?IL=0.3*5 = 1.5
@@ -104,7 +104,8 @@ PCB Layout Considerations
 
 ---------------------------------------
 
-
+FDS4435BZ
+https://easyeda.com/wagiminator/y-cn3801-lifepo4-solar-charger_copy_copy
 
 
 

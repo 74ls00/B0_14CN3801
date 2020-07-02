@@ -14876,7 +14876,7 @@ Source: http://www.infineon.com/upload/Document/BSA223SP_Rev1.3.pdf</description
 <attribute name="NAME" x="-11.176" y="66.421" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-11.176" y="63.881" size="1.778" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="-12.7" y="53.34"/>
+<instance part="GND1" gate="1" x="-20.32" y="48.26"/>
 <instance part="HL1" gate="G$1" x="10.16" y="50.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.192" y="54.356" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="14.732" y="56.515" size="1.778" layer="96" rot="R180"/>
@@ -14911,13 +14911,13 @@ Source: http://www.infineon.com/upload/Document/BSA223SP_Rev1.3.pdf</description
 <attribute name="VALUE" x="-18.796" y="63.881" size="1.778" layer="96"/>
 </instance>
 <instance part="C1C" gate="G$1" x="-27.94" y="63.5"/>
-<instance part="C3" gate="G$1" x="119.38" y="43.18"/>
-<instance part="GND6" gate="1" x="119.38" y="33.02"/>
-<instance part="C3B" gate="G$1" x="132.08" y="43.18" smashed="yes">
-<attribute name="NAME" x="133.604" y="46.101" size="1.778" layer="95"/>
-<attribute name="VALUE" x="133.604" y="43.561" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="119.38" y="45.72"/>
+<instance part="GND6" gate="1" x="119.38" y="35.56"/>
+<instance part="C3B" gate="G$1" x="132.08" y="45.72" smashed="yes">
+<attribute name="NAME" x="133.604" y="48.641" size="1.778" layer="95"/>
+<attribute name="VALUE" x="133.604" y="46.101" size="1.778" layer="96"/>
 </instance>
-<instance part="GND7" gate="1" x="132.08" y="33.02"/>
+<instance part="GND7" gate="1" x="132.08" y="35.56"/>
 <instance part="D2" gate="G$1" x="-38.1" y="73.66"/>
 <instance part="L3" gate="G$1" x="81.28" y="73.66"/>
 <instance part="Q1" gate="G$1" x="53.34" y="71.12" smashed="yes" rot="R90">
@@ -14942,9 +14942,9 @@ Source: http://www.infineon.com/upload/Document/BSA223SP_Rev1.3.pdf</description
 <attribute name="VALUE" x="105.41" y="77.47" size="1.778" layer="96" rot="MR0"/>
 <attribute name="NAME" x="97.79" y="80.01" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="RSC" gate="G$1" x="119.38" y="58.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="123.4186" y="67.31" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="122.682" y="54.61" size="1.778" layer="96" rot="R90"/>
+<instance part="RSC" gate="G$1" x="119.38" y="60.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="123.4186" y="69.85" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="122.682" y="57.15" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R5" gate="G$1" x="106.68" y="43.18" smashed="yes">
 <attribute name="NAME" x="108.1786" y="41.91" size="1.778" layer="95" rot="R270"/>
@@ -14968,7 +14968,15 @@ Source: http://www.infineon.com/upload/Document/BSA223SP_Rev1.3.pdf</description
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="-12.7" y1="58.42" x2="-12.7" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="50.8" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="53.34" x2="-12.7" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="53.34" x2="-12.7" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="C1B" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="58.42" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="53.34" x2="-27.94" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="C1C" gate="G$1" pin="-"/>
+<wire x1="-27.94" y1="53.34" x2="-27.94" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-20.32" y="53.34"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -14996,12 +15004,12 @@ Source: http://www.infineon.com/upload/Document/BSA223SP_Rev1.3.pdf</description
 <segment>
 <pinref part="C3B" gate="G$1" pin="2"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="132.08" y1="38.1" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="40.64" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="C3" gate="G$1" pin="-"/>
-<wire x1="119.38" y1="35.56" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="38.1" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -15104,7 +15112,9 @@ Source: http://www.infineon.com/upload/Document/BSA223SP_Rev1.3.pdf</description
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="-35.56" y1="73.66" x2="-33.02" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="C"/>
-<wire x1="-33.02" y1="73.66" x2="-12.7" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="73.66" x2="-27.94" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="73.66" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="73.66" x2="-12.7" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="68.58" x2="-33.02" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="68.58" x2="-33.02" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="68.58" x2="-33.02" y2="63.5" width="0.1524" layer="91"/>
@@ -15112,6 +15122,12 @@ Source: http://www.infineon.com/upload/Document/BSA223SP_Rev1.3.pdf</description
 <wire x1="-33.02" y1="63.5" x2="-35.56" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-33.02" y="68.58"/>
 <junction x="-33.02" y="73.66"/>
+<pinref part="C1B" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="66.04" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="C1C" gate="G$1" pin="+"/>
+<wire x1="-27.94" y1="66.04" x2="-27.94" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-27.94" y="73.66"/>
+<junction x="-20.32" y="73.66"/>
 </segment>
 </net>
 <net name="CSP" class="0">
@@ -15210,7 +15226,7 @@ Source: http://www.infineon.com/upload/Document/BSA223SP_Rev1.3.pdf</description
 <pinref part="RSC" gate="G$1" pin="2"/>
 <junction x="104.14" y="73.66"/>
 <wire x1="93.98" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="63.5" x2="119.38" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="66.04" x2="119.38" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="SJ1" gate="1" pin="2"/>
 <wire x1="91.44" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
@@ -15224,18 +15240,17 @@ Source: http://www.infineon.com/upload/Document/BSA223SP_Rev1.3.pdf</description
 <wire x1="73.66" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="50.8" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="50.8" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="50.8" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="RSC" gate="G$1" pin="1"/>
 <pinref part="C3" gate="G$1" pin="+"/>
-<wire x1="119.38" y1="45.72" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="48.26" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="50.8" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="C3B" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="48.26" x2="132.08" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="48.26" x2="144.78" y2="48.26" width="0.1524" layer="91"/>
-<junction x="132.08" y="48.26"/>
-<wire x1="119.38" y1="50.8" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="50.8" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="50.8" x2="144.78" y2="50.8" width="0.1524" layer="91"/>
+<junction x="132.08" y="50.8"/>
 <junction x="119.38" y="50.8"/>
-<junction x="119.38" y="48.26"/>
+<junction x="119.38" y="50.8"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="43.18" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="43.18" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
