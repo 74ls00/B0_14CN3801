@@ -6,6 +6,9 @@
     JY-F1_140709_ForFlashtoolFromReadBack_140813-083609.zip
 
 Неофициальные прошивки
+ ANDROID 4.4.4 (NonastikOS)
+ https://cloud.mail.ru/public/4rfD/3Cq3HY4yd
+
  Android 5.1.1
 
   Tesla OS
@@ -22,6 +25,16 @@
     Инструкция прошивки Resurrection-Remix v5.5.9 с GAPPS
     24.01.17 https://4pda.ru/forum/index.php?showtopic=551212&st=7300#entry57527510
      1? TWRP
+
+
+
+В шапке "Неофициальные прошивки" не понятно под какую версию, файлы "Экспресс - патч для адаптации прошивки под любую ревизию" тоже пропали.
+
+TWRP 3.0.2
+ссылки дохлые все. где этот trwp брать ?
+
+
+
 
 
 
