@@ -1,0 +1,20 @@
+Официальные прошивки
+ Для "новой" ревизии
+  Для SP Flash Tool
+   Официальная прошивка 20140709-102803(WCDMA)
+    https://yadi.sk/d/4O33yCikacwdE
+    JY-F1_140709_ForFlashtoolFromReadBack_140813-083609.zip
+
+Неофициальные прошивки
+ Android 5.1.1
+
+  Tesla OS
+   15.05.16 https://4pda.ru/forum/index.php?showtopic=551212&st=6480#entry49639885
+    Баги
+     Не запоминает пароль WI-FI. не работают сторонние камеры
+  
+  HK Project ROM V5 (android 5.1.1) Финальная сборка
+   09.02.18 https://4pda.ru/forum/index.php?showtopic=551212&st=7600#entry70171005
+   
+  Resurrection-Remix v5.5.9
+   14.01.17 https://4pda.ru/forum/index.php?showtopic=551212&st=7260#entry57148697
