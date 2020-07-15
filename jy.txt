@@ -17,4 +17,12 @@
    09.02.18 https://4pda.ru/forum/index.php?showtopic=551212&st=7600#entry70171005
    
   Resurrection-Remix v5.5.9
-   14.01.17 https://4pda.ru/forum/index.php?showtopic=551212&st=7260#entry57148697
+   14.01.17 23.04.17
+   https://4pda.ru/forum/index.php?showtopic=551212&st=7260#entry57148697
+    Инструкция прошивки Resurrection-Remix v5.5.9 с GAPPS
+    24.01.17 https://4pda.ru/forum/index.php?showtopic=551212&st=7300#entry57527510
+     1? TWRP
+
+
+
+
