@@ -13,7 +13,7 @@ https://coub.com/view/2ezx6r
 https://www.crowdsupply.com/silicognition/lifepo4wered-pi-plus/updates/scaling-up
 https://cdn.hackaday.io/files/20909894570656/LiFePO4wered-PiPlus-CC-BY-SA.pdf
 
-
+---------------------------------------
 ---------------------------------------
 Charge Current Setting
 ток заряда
@@ -24,6 +24,9 @@ Ich=120mv/Rcs
 5a 24 mohm
 4a 30 mohm
 3a x=40 mohm
+
+
+
 
 ---------------------------------------
 The Maximum Power Point Tracking
@@ -108,7 +111,7 @@ FDS4435BZ
 https://easyeda.com/wagiminator/y-cn3801-lifepo4-solar-charger_copy_copy
 
 
-
+http://bestdiy.ru/elektronnaya-nagruzka-usb-svoimi-rukami.html
 
 
 
