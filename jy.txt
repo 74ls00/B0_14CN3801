@@ -24,7 +24,10 @@
    https://4pda.ru/forum/index.php?showtopic=551212&st=7260#entry57148697
     Инструкция прошивки Resurrection-Remix v5.5.9 с GAPPS
     24.01.17 https://4pda.ru/forum/index.php?showtopic=551212&st=7300#entry57527510
-     1? TWRP
+?    1? TWRP
+     389 #7762 https://4pda.ru/forum/index.php?showtopic=551212&st=220#entry30837782
+     TWRP_2.5.0.0_JY-F1.zip
+     https://f2h.io/en/6k11mrwutuw7
 
 
 
