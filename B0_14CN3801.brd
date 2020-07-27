@@ -152,9 +152,11 @@
 <dimension x1="42.545" y1="65.405" x2="45.72" y2="51.435" x3="90.805" y3="58.42" textsize="1.778" layer="47" dtype="vertical"/>
 <dimension x1="40.64" y1="10.795" x2="101.6" y2="5.08" x3="71.12" y3="101.6" textsize="1.778" layer="1" dtype="horizontal"/>
 <dimension x1="19.05" y1="86.36" x2="12.065" y2="33.02" x3="114.935" y3="59.69" textsize="1.778" layer="21" dtype="vertical"/>
-<dimension x1="-108.585" y1="38.1" x2="-61.595" y2="37.465" x3="-85.09" y3="112.395" textsize="1.778" layer="21" dtype="horizontal"/>
+<dimension x1="-108.585" y1="38.1" x2="-61.595" y2="50.165" x3="-85.09" y3="112.395" textsize="1.778" layer="21" dtype="horizontal"/>
 <dimension x1="-108.585" y1="116.205" x2="-12.065" y2="115.57" x3="-60.325" y3="125.73" textsize="1.778" layer="21" dtype="horizontal"/>
 <dimension x1="-59.055" y1="36.195" x2="-12.065" y2="35.56" x3="-35.56" y3="110.49" textsize="1.778" layer="21" dtype="horizontal"/>
+<dimension x1="-109.22" y1="20.955" x2="-59.69" y2="19.685" x3="-84.455" y3="-18.415" textsize="1.778" layer="21" dtype="horizontal"/>
+<dimension x1="-53.975" y1="-8.89" x2="-53.975" y2="15.875" x3="-37.465" y3="3.4925" textsize="1.778" layer="21" dtype="vertical"/>
 </plain>
 <libraries>
 <library name="Consonance">
@@ -1713,27 +1715,44 @@ grid 2.54 mm</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="DesignRules">
+<description language="de">
+
+
+
+
+
+
+&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+
+</description>
+<description language="en">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
+<param name="mdWireWire" value="0.2mm"/>
+<param name="mdWirePad" value="0.2mm"/>
+<param name="mdWireVia" value="0.2mm"/>
 <param name="mdPadPad" value="8mil"/>
 <param name="mdPadVia" value="8mil"/>
 <param name="mdViaVia" value="8mil"/>
@@ -1742,26 +1761,26 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="8mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="10mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
+<param name="msWidth" value="8mil"/>
 <param name="msDrill" value="24mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
-<param name="rvPadTop" value="0.25"/>
-<param name="rvPadInner" value="0.25"/>
-<param name="rvPadBottom" value="0.25"/>
+<param name="rvPadTop" value="0.2"/>
+<param name="rvPadInner" value="0.3"/>
+<param name="rvPadBottom" value="0.2"/>
 <param name="rvViaOuter" value="0.25"/>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
-<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadTop" value="0.5mm"/>
+<param name="rlMaxPadTop" value="1mm"/>
 <param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
-<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinPadBottom" value="0.5mm"/>
+<param name="rlMaxPadBottom" value="1mm"/>
 <param name="rlMinViaOuter" value="8mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
 <param name="rlMinViaInner" value="8mil"/>
@@ -1928,22 +1947,24 @@ design rules under a new name.</description>
 <element name="U$3" library="B0_14CN3801" package="T48K30" value="" x="-35.56" y="66.675"/>
 <element name="VT1" library="m_transistor" package="TO220BH" value="" x="-92.075" y="103.505" rot="R90"/>
 <element name="VT2" library="m_transistor" package="TO220BH" value="" x="-66.675" y="103.505" rot="R90"/>
-<element name="D8" library="diode" package="SMC" value="" x="-98.425" y="40.64" rot="R180"/>
-<element name="D9" library="diode" package="SMC" value="" x="-98.425" y="47.625" rot="R180"/>
-<element name="D10" library="diode" package="SMC" value="" x="-98.425" y="54.61" rot="R180"/>
-<element name="D11" library="diode" package="SMC" value="" x="-98.425" y="61.595" rot="R180"/>
-<element name="D12" library="diode" package="SMC" value="" x="-98.425" y="68.58" rot="R180"/>
-<element name="D13" library="diode" package="SMC" value="" x="-98.425" y="75.565" rot="R180"/>
-<element name="D14" library="diode" package="SMC" value="" x="-98.425" y="82.55" rot="R180"/>
-<element name="D7" library="diode" package="SMC" value="" x="-71.755" y="82.55"/>
-<element name="D15" library="diode" package="SMC" value="" x="-71.755" y="75.565"/>
-<element name="D16" library="diode" package="SMC" value="" x="-71.755" y="68.58"/>
-<element name="D17" library="diode" package="SMC" value="" x="-71.755" y="61.595"/>
-<element name="D18" library="diode" package="SMC" value="" x="-71.755" y="54.61"/>
-<element name="D19" library="diode" package="SMC" value="" x="-71.755" y="47.625"/>
-<element name="D20" library="diode" package="SMC" value="" x="-71.755" y="40.64"/>
-<element name="JP10" library="Разъёмы штырьковые 2.54мм" package="1X07" value="" x="-107.315" y="46.99" rot="R90"/>
-<element name="JP11" library="Разъёмы штырьковые 2.54мм" package="1X07" value="" x="-99.695" y="3.81"/>
+<element name="D8" library="diode" package="SMC" value="" x="-63.5" y="3.175" rot="MR90"/>
+<element name="D9" library="diode" package="SMC" value="" x="-69.215" y="3.175" rot="MR90"/>
+<element name="D10" library="diode" package="SMC" value="" x="-77.47" y="3.175" rot="MR90"/>
+<element name="D11" library="diode" package="SMC" value="" x="-84.455" y="3.175" rot="MR90"/>
+<element name="D12" library="diode" package="SMC" value="" x="-91.44" y="3.175" rot="MR90"/>
+<element name="D13" library="diode" package="SMC" value="" x="-98.425" y="3.175" rot="MR90"/>
+<element name="D14" library="diode" package="SMC" value="" x="-105.41" y="3.175" rot="MR90"/>
+<element name="D7" library="diode" package="SMC" value="" x="-105.41" y="6.985" rot="R90"/>
+<element name="D15" library="diode" package="SMC" value="" x="-98.425" y="6.985" rot="R90"/>
+<element name="D16" library="diode" package="SMC" value="" x="-91.44" y="6.985" rot="R90"/>
+<element name="D17" library="diode" package="SMC" value="" x="-84.455" y="6.985" rot="R90"/>
+<element name="D18" library="diode" package="SMC" value="" x="-77.47" y="6.985" rot="R90"/>
+<element name="D19" library="diode" package="SMC" value="" x="-70.485" y="6.985" rot="R90"/>
+<element name="D20" library="diode" package="SMC" value="" x="-63.5" y="6.985" rot="R90"/>
+<element name="JP10" library="Разъёмы штырьковые 2.54мм" package="1X07" value="" x="-111.76" y="49.53" rot="R90"/>
+<element name="JP11" library="Разъёмы штырьковые 2.54мм" package="1X07" value="" x="-83.185" y="-6.985" rot="R180"/>
+<element name="JP2" library="Разъёмы штырьковые 2.54мм" package="1X02" value="" x="-63.5" y="15.24" rot="R180"/>
+<element name="JP3" library="Разъёмы штырьковые 2.54мм" package="1X02" value="" x="-70.485" y="15.24" rot="R180"/>
 </elements>
 <signals>
 <signal name="N$2">
@@ -2147,37 +2168,74 @@ design rules under a new name.</description>
 <signal name="N$10">
 <contactref element="D14" pad="C"/>
 <contactref element="D7" pad="C"/>
-<wire x1="-75.455" y1="82.55" x2="-94.725" y2="82.55" width="0" layer="19" extent="1-1"/>
+<contactref element="JP11" pad="7"/>
+<wire x1="-105.41" y1="3.285" x2="-105.41" y2="-0.525" width="0" layer="19" extent="1-16"/>
+<wire x1="-90.805" y1="-6.985" x2="-105.41" y2="3.285" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="D13" pad="C"/>
 <contactref element="D15" pad="C"/>
-<wire x1="-75.455" y1="75.565" x2="-94.725" y2="75.565" width="0" layer="19" extent="1-1"/>
+<contactref element="JP11" pad="6"/>
+<wire x1="-98.425" y1="3.285" x2="-88.265" y2="-6.985" width="0" layer="19" extent="1-1"/>
+<wire x1="-98.425" y1="-0.525" x2="-98.425" y2="3.285" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$17">
 <contactref element="D12" pad="C"/>
 <contactref element="D16" pad="C"/>
-<wire x1="-75.455" y1="68.58" x2="-94.725" y2="68.58" width="0" layer="19" extent="1-1"/>
+<contactref element="JP11" pad="5"/>
+<wire x1="-91.44" y1="3.285" x2="-85.725" y2="-6.985" width="0" layer="19" extent="1-1"/>
+<wire x1="-91.44" y1="-0.525" x2="-91.44" y2="3.285" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$18">
 <contactref element="D11" pad="C"/>
 <contactref element="D17" pad="C"/>
-<wire x1="-75.455" y1="61.595" x2="-94.725" y2="61.595" width="0" layer="19" extent="1-1"/>
+<contactref element="JP11" pad="4"/>
+<wire x1="-84.455" y1="3.285" x2="-83.185" y2="-6.985" width="0" layer="19" extent="1-1"/>
+<wire x1="-84.455" y1="-0.525" x2="-84.455" y2="3.285" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$19">
 <contactref element="D10" pad="C"/>
 <contactref element="D18" pad="C"/>
-<wire x1="-75.455" y1="54.61" x2="-94.725" y2="54.61" width="0" layer="19" extent="1-1"/>
+<contactref element="JP11" pad="3"/>
+<wire x1="-77.47" y1="3.285" x2="-80.645" y2="-6.985" width="0" layer="19" extent="1-1"/>
+<wire x1="-77.47" y1="-0.525" x2="-77.47" y2="3.285" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$20">
 <contactref element="D9" pad="C"/>
 <contactref element="D19" pad="C"/>
-<wire x1="-75.455" y1="47.625" x2="-94.725" y2="47.625" width="0" layer="19" extent="1-1"/>
+<contactref element="JP11" pad="2"/>
+<wire x1="-70.485" y1="3.285" x2="-78.105" y2="-6.985" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.215" y1="-0.525" x2="-70.485" y2="3.285" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$21">
 <contactref element="D8" pad="C"/>
 <contactref element="D20" pad="C"/>
-<wire x1="-75.455" y1="40.64" x2="-94.725" y2="40.64" width="0" layer="19" extent="1-1"/>
+<contactref element="JP11" pad="1"/>
+<wire x1="-63.5" y1="3.285" x2="-75.565" y2="-6.985" width="0" layer="19" extent="1-1"/>
+<wire x1="-63.5" y1="-0.525" x2="-63.5" y2="3.285" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="N$24">
+<contactref element="D8" pad="A"/>
+<contactref element="JP2" pad="1"/>
+<wire x1="-63.5" y1="6.875" x2="-62.23" y2="8.145" width="1.27" layer="16"/>
+<wire x1="-62.23" y1="8.145" x2="-62.23" y2="15.24" width="1.27" layer="16"/>
+</signal>
+<signal name="N$25">
+<contactref element="D20" pad="A"/>
+<contactref element="JP2" pad="2"/>
+<wire x1="-64.77" y1="15.24" x2="-64.77" y2="11.955" width="1.27" layer="1"/>
+<wire x1="-64.77" y1="11.955" x2="-63.5" y2="10.685" width="1.27" layer="1"/>
+</signal>
+<signal name="N$22">
+<contactref element="D19" pad="A"/>
+<contactref element="JP3" pad="2"/>
+<wire x1="-71.755" y1="15.24" x2="-71.755" y2="11.955" width="1.27" layer="1"/>
+<wire x1="-71.755" y1="11.955" x2="-70.485" y2="10.685" width="1.27" layer="1"/>
+</signal>
+<signal name="N$23">
+<contactref element="JP3" pad="1"/>
+<contactref element="D9" pad="A"/>
+<wire x1="-69.215" y1="6.875" x2="-69.215" y2="15.24" width="1.27" layer="16"/>
 </signal>
 </signals>
 </board>
